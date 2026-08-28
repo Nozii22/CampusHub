@@ -1,0 +1,204 @@
+/* Events Page Styling */
+.events-page-main {
+    padding: 40px 0 60px;
+    min-height: 75vh;
+}
+
+.page-intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.page-intro h1 {
+    font-size: 28px;
+    color: #0f172a;
+    margin: 0 0 8px 0;
+}
+
+.page-intro p {
+    font-size: 14.5px;
+    color: #64748b;
+    margin: 0;
+}
+
+.section-title {
+    font-size: 22px;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    font-size: 14px;
+    color: #64748b;
+    margin: -12px 0 20px 0;
+}
+
+/* Events Grid */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.event-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.event-card h3 {
+    font-size: 17px;
+    color: #0f172a;
+    margin: 0 0 10px 0;
+}
+
+.event-desc {
+    font-size: 13.5px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0 0 16px 0;
+    flex-grow: 1;
+}
+
+.event-details {
+    background-color: #f8fafc;
+    border: 1px solid #f1f5f9;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: #334155;
+}
+
+.event-details p {
+    margin: 4px 0;
+}
+
+.btn-register {
+    width: 100%;
+    padding: 10px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 13.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-register:hover {
+    background-color: #1d4ed8;
+}
+
+/* Activities Grid */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.activity-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 18px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.activity-card h3 {
+    font-size: 15.5px;
+    color: #0f172a;
+    margin: 0 0 6px 0;
+}
+
+.activity-card p {
+    font-size: 13px;
+    color: #64748b;
+    margin: 0;
+}
+
+.no-data-msg {
+    grid-column: 1 / -1;
+    color: #64748b;
+    font-size: 14px;
+}
+/* My Registrations Section */
+.my-registrations-block {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.my-reg-table-container {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow-x: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.my-reg-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    text-align: left;
+}
+
+.my-reg-table th {
+    background-color: #f8fafc;
+    color: #334155;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e2e8f0;
+    font-weight: 600;
+}
+
+.my-reg-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #334155;
+    vertical-align: middle;
+}
+
+.text-center-cell {
+    text-align: center;
+    color: #94a3b8;
+    padding: 25px !important;
+}
+
+/* Real-time Status Badges */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 9px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-pending {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.status-approved {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.status-rejected {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}

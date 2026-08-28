@@ -1,0 +1,329 @@
+/* Container & Base Layout */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.home-main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #334155;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #f8fafc;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.hero-section h1 {
+    font-size: 32px;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.hero-tagline {
+    font-size: 17px;
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.hero-desc {
+    font-size: 15px;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 50px 0;
+}
+
+.bg-light {
+    background-color: #f8fafc;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+.section-desc {
+    font-size: 14.5px;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+/* Section Header Row with See All Link */
+.section-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.section-header-row .section-title {
+    margin-bottom: 4px;
+}
+
+.section-header-row .section-desc {
+    margin-bottom: 0;
+}
+
+.see-all-link {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.see-all-link:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* Event Cards Grid */
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event-card {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.event-card h3 {
+    font-size: 17px;
+    color: #0f172a;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-desc {
+    font-size: 13.5px;
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.card-meta {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 18px;
+}
+
+.btn-card {
+    display: inline-block;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-card:hover {
+    background-color: #eff6ff;
+}
+
+/* Tag Lists (Activities, Communities) */
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tag-list li {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #334155;
+    font-weight: 500;
+}
+
+/* Announcement Items */
+.announcement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.announcement-item {
+    background: #ffffff;
+    border-left: 4px solid #2563eb;
+    border-top: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 15px 20px;
+    border-radius: 0 6px 6px 0;
+}
+
+.announcement-item h3 {
+    font-size: 16px;
+    color: #0f172a;
+    margin: 0 0 6px 0;
+}
+
+.announcement-item p {
+    font-size: 13.5px;
+    color: #64748b;
+    margin: 0;
+}
+
+/* ================= MEDIA & GALLERY CARDS (MATCHED CLASSES) ================= */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    align-items: stretch;
+}
+
+.media-item-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.media-item-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.media-display-frame {
+    width: 100%;
+    height: 180px; /* Fixed card height */
+    background-color: #0f172a;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-media-element {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 180px !important;
+    object-fit: cover !important; /* Crops cleanly to frame */
+    display: block !important;
+    border: none !important;
+}
+
+.media-type-tag {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: rgba(15, 23, 42, 0.8);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 7px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.media-card-body {
+    padding: 12px 15px;
+    background: #ffffff;
+    flex-grow: 1;
+}
+
+.media-card-title {
+    font-size: 15px;
+    color: #0f172a;
+    margin: 0 0 4px 0;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.media-card-date {
+    font-size: 12px;
+    color: #94a3b8;
+    display: block;
+}
+
+/* Call To Action (Join) */
+.cta-section {
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    font-size: 14.5px;
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cta-buttons .btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cta-buttons .btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.cta-buttons .btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #64748b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cta-buttons .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}

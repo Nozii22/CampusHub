@@ -1,0 +1,112 @@
+/* Header & Navigation Bar */
+.main-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f172a;
+    text-decoration: none;
+}
+
+.brand-logo span {
+    color: #2563eb;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #64748b;
+    font-size: 14.5px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #2563eb;
+}
+
+.nav-auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.btn-signin {
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 5px;
+    border: 1px solid #2563eb;
+}
+
+.btn-signin:hover {
+    background-color: #eff6ff;
+}
+
+.btn-join {
+    text-decoration: none;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.btn-join:hover {
+    background-color: #1d4ed8;
+}
+
+.nav-auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-user-profile {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    color: #2563eb !important;
+}
+
+.btn-signout {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+    padding: 7px 14px;
+    border-radius: 5px;
+    font-size: 13.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-signout:hover {
+    background-color: #fca5a5;
+    color: #7f1d1d;
+}

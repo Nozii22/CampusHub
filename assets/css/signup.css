@@ -1,0 +1,171 @@
+/* Page Layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Bar */
+.auth-header {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.brand-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    text-decoration: none;
+}
+
+.back-link {
+    font-size: 14px;
+    color: #64748b;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #2563eb;
+}
+
+/* Main Container Card */
+.auth-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.signup-box {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.signup-box h1 {
+    font-size: 24px;
+    color: #0f172a;
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+
+.signup-box p {
+    font-size: 14px;
+    color: #64748b;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+}
+
+.terms-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #475569;
+    margin: 15px 0;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 11px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #1d4ed8;
+}
+
+/* Footer Link */
+.signin-text {
+    text-align: center;
+    font-size: 13.5px;
+    color: #64748b;
+    margin-top: 18px;
+}
+
+.signin-text a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signin-text a:hover {
+    text-decoration: underline;
+}
+
+.form-group select#gender {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #334155;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover and Focus States */
+.form-group select#gender:hover {
+    border-color: #94a3b8;
+}
+
+.form-group select#gender:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Dropdown Option Items */
+.form-group select#gender option {
+    color: #0f172a;
+    padding: 6px;
+}

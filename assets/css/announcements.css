@@ -1,0 +1,110 @@
+/* Announcements Page Layout */
+.announcements-main {
+    padding: 50px 0;
+    min-height: 75vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-intro h1 {
+    font-size: 28px;
+    color: #0f172a;
+    margin: 0 0 8px 0;
+}
+
+.page-intro p {
+    font-size: 15px;
+    color: #64748b;
+    margin: 0;
+}
+
+/* Announcements Grid */
+.announcements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.announcement-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 24px;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.ann-date {
+    font-size: 12px;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.announcement-card h2 {
+    font-size: 17px;
+    color: #0f172a;
+    margin: 0 0 8px 0;
+}
+
+.announcement-card p {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Category Accent Borders & Badges */
+.announcement-card.important { border-left: 4px solid #ef4444; }
+.announcement-card.academic  { border-left: 4px solid #2563eb; }
+.announcement-card.event     { border-left: 4px solid #f59e0b; }
+.announcement-card.general   { border-left: 4px solid #10b981; }
+
+.badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.badge-important { background-color: #fee2e2; color: #b91c1c; }
+.badge-academic  { background-color: #dbeafe; color: #1d4ed8; }
+.badge-event     { background-color: #fef3c7; color: #b45309; }
+.badge-general   { background-color: #d1fae5; color: #047857; }
+
+/* Empty state */
+.no-announcements {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px dashed #cbd5e1;
+    color: #64748b;
+}

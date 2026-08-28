@@ -1,0 +1,168 @@
+/* Forms Page Layout */
+.page-main {
+    padding: 40px 20px 60px;
+    min-height: 80vh;
+}
+
+.container-small {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.page-intro {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.page-intro h1 {
+    font-size: 26px;
+    color: #0f172a;
+    margin: 0 0 6px 0;
+}
+
+.page-intro p {
+    font-size: 14px;
+    color: #64748b;
+    margin: 0;
+}
+
+/* White Form Card Box */
+.form-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 26px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Form Input Controls */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+.form-box .btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 6px;
+}
+
+.form-box .btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+/* Submission History Section & Table */
+.history-section {
+    margin-top: 40px;
+}
+
+.history-section h2 {
+    font-size: 18px;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+.history-table-container {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow-x: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+}
+
+.data-table th, 
+.data-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #f1f5f9;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #f8fafc;
+    color: #334155;
+    font-weight: 600;
+}
+
+.badge {
+    background: #f1f5f9;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #0369a1;
+    font-weight: 600;
+}
+
+.status-tag {
+    font-weight: 600;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.status-pending {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.status-resolved {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.text-center {
+    text-align: center;
+    color: #94a3b8;
+    padding: 20px !important;
+}

@@ -1,0 +1,91 @@
+/* Footer Base Layout */
+.site-footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    margin-top: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #475569;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 20px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.footer-col {
+    flex: 1 1 180px;
+}
+
+.brand-col {
+    flex: 1.5 1 240px;
+}
+
+.brand-col h2 {
+    font-size: 20px;
+    color: #0f172a;
+    margin: 0 0 10px 0;
+}
+
+.brand-col h2 span {
+    color: #2563eb;
+}
+
+.brand-col p {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: #64748b;
+    margin: 0;
+}
+
+.footer-col h3 {
+    font-size: 15px;
+    color: #0f172a;
+    margin: 0 0 12px 0;
+    font-weight: 600;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #64748b;
+    text-decoration: none;
+    font-size: 13.5px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #2563eb;
+}
+
+.contact-info {
+    font-size: 13.5px;
+    color: #64748b;
+    margin: 0 0 6px 0;
+}
+
+/* Copyright Bottom Bar */
+.footer-bottom {
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #64748b;
+    margin: 0;
+}
